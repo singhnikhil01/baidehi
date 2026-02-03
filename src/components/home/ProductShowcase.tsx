@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function ProductShowcase() {
   return (
-    <section className="relative py-24 bg-[#022c22]">
+    <section className="relative py-24 bg-[#022c22] overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-amber-500/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
@@ -24,7 +24,7 @@ export default function ProductShowcase() {
         {/* Bento Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 auto-rows-min md:auto-rows-fr h-auto md:h-[600px]">
           {/* Hero Item - Stick Noodles */}
-          <div className="group relative md:col-span-2 md:row-span-2 rounded-3xl overflow-hidden bg-emerald-950 border border-emerald-800/50">
+          <div className="group relative min-h-[400px] md:min-h-0 md:col-span-2 md:row-span-2 rounded-3xl overflow-hidden bg-emerald-950 border border-emerald-800/50">
             <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?q=80&w=1000&auto=format&fit=crop')] bg-cover bg-center transition-transform duration-700 group-hover:scale-110"></div>
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
 
@@ -58,7 +58,7 @@ export default function ProductShowcase() {
           </div>
 
           {/* Top Right - Flat Noodles */}
-          <div className="group relative md:col-span-2 rounded-3xl overflow-hidden bg-emerald-950 border border-emerald-800/50">
+          <div className="group relative min-h-[300px] md:min-h-0 md:col-span-2 rounded-3xl overflow-hidden bg-emerald-950 border border-emerald-800/50">
             <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1547496502-ffa2264a36b5?q=80&w=800&auto=format&fit=crop')] bg-cover bg-center transition-transform duration-700 group-hover:scale-110"></div>
             <div className="absolute inset-0 bg-gradient-to-l from-black/80 via-black/20 to-transparent"></div>
 
@@ -79,7 +79,7 @@ export default function ProductShowcase() {
           </div>
 
           {/* Bottom Left - Sewai */}
-          <div className="group relative rounded-3xl overflow-hidden bg-emerald-950 border border-emerald-800/50">
+          <div className="group relative min-h-[300px] md:min-h-0 rounded-3xl overflow-hidden bg-emerald-950 border border-emerald-800/50">
             <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=800&auto=format&fit=crop')] bg-cover bg-center transition-transform duration-700 group-hover:scale-110"></div>
             <div className="absolute inset-0 bg-black/60 group-hover:bg-black/40 transition-colors"></div>
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
